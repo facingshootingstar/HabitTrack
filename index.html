@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>HabitTrack — Daily Habit Tracker</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="app">
+    <h1 class="title">✅ Habit<span class="accent">Track</span></h1>
+    <div class="today">📅 <span id="today-date"></span></div>
+    <div class="add-bar">
+        <input type="text" id="habit-input" class="input" placeholder="Add a new habit..." onkeydown="if(event.key==='Enter')addHabit()">
+        <select id="habit-icon" class="input input-sm"><option>🏃</option><option>📚</option><option>💪</option><option>🧘</option><option>💧</option><option>🎯</option><option>✍️</option><option>🛏️</option></select>
+        <button class="btn btn-primary" onclick="addHabit()">+ Add</button>
+    </div>
+    <div class="habits" id="habits"></div>
+    <div class="stats-bar">
+        <span>Today: <b id="today-done">0</b>/<b id="today-total">0</b></span>
+        <span>Completion: <b id="pct">0%</b></span>
+    </div>
+</div>
+<script src="app.js"></script>
+</body></html>
