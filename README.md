@@ -1,5 +1,7 @@
 # ✅ HabitTrack — Daily Habit Tracker
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-facingshootingstar.github.io%2FHabitTrack-brightgreen?style=for-the-badge&logo=github)](https://facingshootingstar.github.io/HabitTrack/)
+
 Beautiful, minimal daily habit tracker that runs entirely in your browser.
 
 Track habits, build streaks, and see your consistency at a glance with an interactive calendar heatmap.
