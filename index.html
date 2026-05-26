@@ -18,5 +18,40 @@
         <span>Completion: <b id="pct">0%</b></span>
     </div>
 </div>
+
+<!-- History Modal -->
+<div id="history-modal" class="modal hidden" onclick="if(event.target.id==='history-modal') closeHistory()">
+    <div class="modal-content" onclick="event.stopImmediatePropagation()">
+        <div class="modal-header">
+            <div class="modal-title">
+                <span id="modal-icon" class="habit-icon"></span>
+                <span id="modal-name"></span>
+            </div>
+            <button class="modal-close" onclick="closeHistory()">✕</button>
+        </div>
+
+        <div class="modal-stats">
+            <div class="stat"><div class="stat-val" id="modal-current">0</div><div class="stat-label">Current Streak</div></div>
+            <div class="stat"><div class="stat-val" id="modal-longest">0</div><div class="stat-label">Longest Streak</div></div>
+            <div class="stat"><div class="stat-val" id="modal-total">0</div><div class="stat-label">Total Check-ins</div></div>
+        </div>
+
+        <div class="heatmap-section">
+            <div class="heatmap-label">Last 6 months</div>
+            <div id="heatmap" class="heatmap"></div>
+            <div class="heatmap-legend">
+                <span>Less</span>
+                <div class="legend-box" style="background:#1c1c30"></div>
+                <div class="legend-box" style="background:#166534"></div>
+                <div class="legend-box" style="background:#15803d"></div>
+                <div class="legend-box" style="background:#16a34a"></div>
+                <div class="legend-box" style="background:#10b981"></div>
+                <span>More</span>
+            </div>
+            <div class="heatmap-hint">Click squares to toggle check-ins</div>
+        </div>
+    </div>
+</div>
+
 <script src="app.js"></script>
 </body></html>
